@@ -87,9 +87,3 @@ def molmass2cap(mass,n):
     F = 96485 #C/mol
     Q_grav = (n*F/mass)*(1/3600)*1000
     return Q_grav  #mAh/g
-
-def calc_cap(compound,n):
-    mass = molmass(compound)
-    Q_grav = molmass2cap(mass,n) #mAh/g
-    
-    return Q_grav
